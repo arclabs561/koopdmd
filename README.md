@@ -1,7 +1,7 @@
 # koopdmd
 
-Koopman and dynamic mode decomposition operators: DMD, EDMD, kernel DMD, and
-Koopman eigenfunction approximations.
+Dynamic mode decomposition operators: DMD and EDMD (extended DMD, which
+approximates the Koopman operator on caller-chosen observables).
 
 This crate implements the operator core: fit the best linear operator
 `A = Y X^+` from consecutive snapshots, eigen-decompose it, and reconstruct the
