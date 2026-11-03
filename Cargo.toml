@@ -1,0 +1,20 @@
+[package]
+name = "koopdmd"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.85"
+description = "Dynamic mode decomposition and Koopman operator approximation"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/arclabs561/koopdmd"
+homepage = "https://docs.rs/koopdmd"
+documentation = "https://docs.rs/koopdmd"
+readme = "README.md"
+keywords = ["koopman", "dmd", "dynamical-systems", "eigenvalues", "decomposition"]
+categories = ["science", "mathematics"]
+include = ["/src", "/tests", "/README.md", "/CHANGELOG.md", "/LICENSE*"]
+
+[workspace]
+
+[dependencies]
+
+[dev-dependencies]
