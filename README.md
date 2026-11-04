@@ -7,8 +7,10 @@ This crate implements the operator core: fit the best linear operator
 `A = Y X^+` from consecutive snapshots, eigen-decompose it, and reconstruct the
 trajectory spectrally. It has no dependencies and targets small state spaces.
 
-Not published yet: depend on it by path or git revision until the first
-release.
+```toml
+[dependencies]
+koopdmd = "0.1"
+```
 
 ```rust
 use koopdmd::{dmd, SnapshotMatrix};
