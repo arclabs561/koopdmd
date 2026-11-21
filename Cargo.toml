@@ -11,7 +11,7 @@ documentation = "https://docs.rs/koopdmd"
 readme = "README.md"
 keywords = ["koopman", "dmd", "dynamical-systems", "eigenvalues", "decomposition"]
 categories = ["science", "mathematics"]
-include = ["/src", "/tests", "/README.md", "/CHANGELOG.md", "/LICENSE*"]
+include = ["/src", "/tests", "/examples", "/README.md", "/CHANGELOG.md", "/LICENSE*"]
 
 [workspace]
 

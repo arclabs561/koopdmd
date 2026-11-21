@@ -32,6 +32,22 @@ assert!((largest - 0.9).abs() < 1e-9);
 assert_eq!(model.reconstruct(10).len(), 10);
 ```
 
+## Fit your own trajectory
+
+Put one state on each line, with whitespace between components. Use equally
+spaced observations and keep the same component order in every row. From a
+checkout, run:
+
+```sh
+cargo run --quiet --example fit_trajectory < trajectory.txt
+```
+
+Try four one-dimensional states: `1`, `2`, `4`, and `100`, each on its own
+line. The example fits the doubling seen in the first three rows. It prints
+the fitted eigenvalue and compares its prediction (8) with the final
+observation (100). The last row never enters the fit. For several components,
+the training snapshots must span the state space.
+
 ## What it is
 
 - `SnapshotMatrix`: validates a trajectory (`NaN`, inconsistent dimensions,
